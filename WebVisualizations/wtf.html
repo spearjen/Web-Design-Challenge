@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title>Web Design Challenge: Web Visualization</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/2.2.7/css/bootstrap.min.css">
+    <link rel="stylesheet" hfre="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <body>
+        <!-- Fixed Right Sidebar -->
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark pmd-navbar pmd-z-depth">
+            <!-- Brand -->
+            <a class="navbar-brand" href="#">Brand</a>
+            
+            <!-- Navbar Right icon -->
+            <div class="pmd-navbar-right-icon ml-auto"> 
+            <a href="javascript:void(0);" class="btn btn-sm pmd-btn-fab pmd-btn-flat pmd-ripple-effect"><i class="material-icons pmd-sm md-light">search</i></a>
+            
+            <!-- Right Sidebar Toggle -->
+            <a href="javascript:void(0);" data-target="basicSidebar" data-placement="right" data-position='fixed' class="btn btn-sm pmd-btn-fab pmd-btn-flat pmd-ripple-effect pmd-sidebar-toggle"><i class="material-icons md-light">more_horiz</i></a>
+            </div>
+        </nav>
+
+        <section id="pmd-main">
+
+            <!-- Right Sidebar -->
+            <aside id="basicSidebar" class="pmd-sidebar bg-light pmd-z-depth" role="navigation">
+                <ul class="nav flex-column pmd-sidebar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="material-icons pmd-list-icon pmd-sm">delete</i>
+                            <span class="media-body">View Profile</span>
+                        </a>
+                    </li>
+                    <div class="pmd-nav-item-divider"></div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="material-icons pmd-list-icon pmd-sm">delete</i>
+                            <span class="media-body">Settings</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="material-icons pmd-list-icon pmd-sm">delete</i>
+                            <span class="media-body">Logout</span>
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+            
+            <!-- Sidebar Overlay -->
+            <div class="pmd-sidebar-overlay"></div>
+            
+            <!-- Start Content -->
+            <div class="pmd-content custom-pmd-content" id="content">
+                <h2 class="headline">Sidebar Constructor</h2>
+                <p>This structure shows a permanent app bar with a floating action button. The app bar absorbs elements from the tablet and mobile bottom bars.</p>
+                <p style="margin-bottom:0;">An optional bottom bar can be added for additional functionality or action overflow. A side nav overlays all other structural elements. A right nav menu can be accessed temporarily or pinned for permanent display.<br><br></p>
+            </div>
+        </section>
+
+    </body>
+</html>
+    <!-- <style>
+    * {
+        margin:0px;
+        padding:0px;
+        font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        color: #aaa;
+        font-size: 0.9375rem;
+        font-weight: 400;
+        line-height: 1.5;
+        text-align:left;
+        background-color: #272b30;
+    }
+    .sidebar {
+        position:fixed;
+        top:0;
+        right:0;
+        left:0;
+        width:200px;
+        height:100%;
+        background:#272b30;
+        transition:all 500ms linear;
+    }
+    .sidebar.active.active {
+        left:0px;
+    }
+    .sidebar ul li {
+        color:rgba(230,230,230,0.9);
+        list-style:none;
+        padding:15px 10px;
+        border-bottom: 1px solid rgba(0,0,0,0.6);
+        text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+    }
+    .sidebar .toggle-btn {
+        position: absolute;
+        left:230px;
+        top:20px;
+    }
+
+    .sidebar .toggle-btn span {
+        display:block;
+        width:30px;
+        height:5px;
+        background:#272b30;
+        margin:5px 0px;
+    }
+    .sidebar .container {
+        padding: 0;
+    }
+    .sidebar .container, .sidebar .container-fluid, .sidebar .container-sm, .sidebar .container-md, .sidebar .container-lg, .navbar .container-xl{
+        display: webkit-box;
+        display: ms-flexbox;
+        display: flex;
+        ms-flex-wrap: wrap;
+        flex-wrapy: wrap;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+    }
+    @media (min-width: 768px)
+    .container, .container-sm, .container-md {
+        max-width: 720px;
+    }
+    @media (min-width: 576px)
+    .container,.container-sm{
+        max-width:540px;
+    }
+    </style>
+    </head>
+    <body>
+        <div class = "sidebar">
+            <ul class="sidebar-nav mr-auto">
+              <li class="side-item active">
+                <a class="side-link" style="color:#aaa" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="side-item dropdown">
+                <a class="side-link dropdown-toggle" style="color:#aaa" href="#" id="sidebarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Visualizations
+                </a>
+                <div class="dropdown-menu" aria-labelledby="sidebarDropdown">
+                  <a class="dropdown-item" href="#">Visualization One</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Visualization Two</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Visualization Three</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Visualization Four</a>
+                </div>
+              </li>
+              <li class="side-item">
+                <a class="side-link" style="color:#aaa" href="#">Comparisons</a>
+              </li>
+              <li class="side-item">
+                <a class="side-link" style="color:#aaa" href="#">Data</a>
+              </li>
+            </ul>
+          </div>
+    </body>
+    </html> -->
