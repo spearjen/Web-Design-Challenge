@@ -1,8 +1,10 @@
+<!-- Calling in stylesheets and settings
+================================================== -->    
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
   <meta charset="UTF-8">
-  <title>Web Visualization</title>
+  <title>Web Visualization: Comparisons</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/slate/bootstrap.min.css" media="screen">
@@ -23,6 +25,20 @@
    </script>
   </head>
 
+<!-- Page Header
+================================================== -->    
+<body>
+  <div class="row">
+      <div class="col-lg-12">
+        <div class="page-header">
+        </br>
+          <h1></br>
+              Comparisons: Latitude vs. X</h1>
+          <p>The following scatterplots compare a specific weather datapoints across latitude.</p>
+        </div>
+      </div>
+  </div>
+
 <!-- Navbar
 ================================================== -->
   <div class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
@@ -34,22 +50,22 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="WebVisualizationsProject.html">Home</a>
+            <a class="nav-link" href="../WebVisualizationsProject.html">Home</a>
           </li>
           <li class="nav-item dropdown show">
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="plots" aria-expanded="true">Plots<span class="caret"></span></a>
             <div class="dropdown-menu show" aria-labelledby="plots">
-              <a class="dropdown-item" href="pages/MaxTemperature.html">Max Temperature</a>
-              <a class="dropdown-item" href="pages/Humidity.html">Humidity</a>
-              <a class="dropdown-item" href="pages/Cloudiness.html">Cloudiness</a>
-              <a class="dropdown-item" href="pages/WindSpeeds.html">Wind Speeds</a>
+              <a class="dropdown-item" href="../pages/MaxTemperature.html">Max Temperature</a>
+              <a class="dropdown-item" href="../pages/Humidity.html">Humidity</a>
+              <a class="dropdown-item" href="../pages/Cloudiness.html">Cloudiness</a>
+              <a class="dropdown-item" href="../pages/WindSpeeds.html">Wind Speeds</a>
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="pages/Comparisons.html">Comparisons</a>
+            <a class="nav-link" href="../pages/Comparisons.html">Comparisons</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="pages/Data.html">Data</a>
+            <a class="nav-link" href="../pages/Data.html">Data</a>
           </li>
         </ul>
       </div>
@@ -58,9 +74,6 @@
   <div class="container">
     <div class="page-header" id="banner">
       <div class="row">
-        <div class="col-lg-8 col-md-7 col-sm-6">
-          <h1>Weather Data Visualization</h1>
-        </div>
         <div class="col-lg-4 col-md-5 col-sm-6">
           <div class="sponsor">
             <script async="" type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CKYIE23N&amp;placement=bootswatchcom" id="_carbonads_js"></script>
@@ -68,47 +81,39 @@
         </div>
       </div>
     </div>
-    </div>
+  </div>
 
-<!-- Container
+  <!-- Responsive Columns
 ================================================== -->
-    <div class="bs-docs-section">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="page-header">
-            <h1 id="containers">Weather You'll Like!</h1>
-          </div>
-          <div class="bs-component">
-            <div class="jumbotron">
-              <h1 class="display-3">What's the perfect latitude for your attitude?</h1>
-              <p class="lead">Provide your ideal weather conditions.  We'll find your ideal vacation location! </p>
-              <hr class="my-4">
-              <p>Choose your ideal maximum temperature, humidity, cloudiness, and wind speed. Based the conditions, we'll pick a vacation spot and a hotel!</p>
-              <p class="lead">
-                <a class="btn btn-primary btn-lg" href="#" role="button">Start here</a>
-              </p>
-            </div>
-        </div>
-      </div>
-    </div>
-
-<!-- Image
-================================================== -->
-<style>
-.bottom_image{
-  width:100%;
-  min-height:100%;
-  margin: auto;
-  background-size: cover;
-  backgroud-position: bottom;
-  background-repeat: no repeat;
+  <title></title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <style>
+  * {
+  box-sizing: border-box;
 }
-</style>
-<div>
-  <img class="bottom_image" src="https://cdn.slashgear.com/wp-content/uploads/2020/04/star-wars-backgrounds-37.jpg" itemprop="image" style="width: 100%; height: 100%;"/>
+  .leftcolumn {
+    position: "absolute"
+    width:%50;
+    float:left;
+  }
+  .rightcolumn {
+    position: "absolute"
+    width:75%;
+    float:left;
+  }
+  </style>
+  </head>
+  <body>
+
+  <div>
+    <div class="leftcolumn"> <h2>Temperature</h2> <img src = "../Images/lat-temp.png" border: 2px solid black/></div>
+    <div class="rightcolumn"> <h2>Cloudiness</h2> <img src = "../Images/lat-cloud.png" border: 2px solid black/></div>
+  </div>
+
+  <div>
+    <div class="leftcolumn"> <h2>Humidity</h2> <img src = "../Images/lat-hum.png" border: 2px solid black/></div>
+    <div class="rightcolumn"> <h2>Wind Speeds</h2> <img src = "../Images/lat-wind.png" border: 2px solid black/></div>
+  </div>
 </div>
-
-
 </body>
-
 </html>
