@@ -9,17 +9,6 @@
     <meta name="author" content="Jay Spears: utilized formatting from https://www.bootstrapcdn.com/bootswatch/?theme=15">
     <meta name="twitter:dnt" content="on">
     <meta name="description" content="Web Data Visualizations of Latitude and Weather Conditions for DU Data Analytics Bootcamp">
-    <title>Web Data Visualizations: Weather</title>
-    <link rel="canonical" href="https://www.bootstrapcdn.com/bootswatch/">
-    <link rel="dns-prefetch" href="https://stackpath.bootstrapcdn.com">
-    <link rel="dns-prefetch" href="https://code.jquery.com">
-    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-    <link rel="apple-touch-icon" href="/assets/img/favicons/apple-touch-icon.6126de5.png" sizes="180x180">
-    <link rel="icon" href="/assets/img/favicons/favicon-32x32.f4c7af0.png" sizes="32x32" type="image/png">
-    <link rel="icon" href="/assets/img/favicons/favicon-16x16.be094a3.png" sizes="16x16" type="image/png">
-    <link rel="manifest" href="/assets/img/favicons/manifest.json">
-    <link rel="mask-icon" href="/assets/img/favicons/safari-pinned-tab.9e2bd47.svg" color="#00afec">
-    <link rel="shortcut icon" href="/assets/img/favicons/favicon.3f81f6a.ico">
     <meta name="msapplication-TileColor" content="#222">
     <meta name="msapplication-config" content="/assets/img/favicons/browserconfig.xml">
     <meta name="theme-color" content="#222">
@@ -38,6 +27,12 @@
     <meta itemprop="name" content="website">
     <meta itemprop="description" content="Web Data Visualizations of Latitude and Weather Conditions for DU Data Analytics Bootcamp">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/slate/bootstrap.min.css" integrity="sha384-8iuq0iaMHpnH2vSyvZMSIqQuUnQA7QM+f6srIdlgBrTSEyd//AWNMyEaSF2yPzNQ" crossorigin="anonymous">
+    <link href="assets/css/fontAwesome.css" rel="stylesheet">
+    <link href="assets/css/light-box.css" rel="stylesheet">
+    <link href="assets/css/owl-carousel.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-slate.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-slate.min.css" rel="stylesheet">
+    <title>Web Data Visualizations: Weather</title>
 
 <!-- Navbar Style: Makes Dropdown Menu Work!
 ================================================== -->
@@ -84,62 +79,191 @@
 
     }
 
+  </style>
 
+<!-- Background Image Slider
+================================================== -->
+  <!-- <style> -->
+    <!-- body, html {
+      height: 100%;
+      margin: 0;
+      /* font-family: Arial, Helvetica, sans-serif; */
+      }
+    
+    * {
+      box-sizing: border-box;
+      }
+    
+    .bg-image {
+      Full height
+      height: 50%; 
+      
+      /* Center and scale the image nicely  */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      } 
+    
+      /* Images used */
+    .img1 { background-image: url("Images/fog.jpg"); }
+    .img2 { background-image: url("Images/lightning-bolts.jpg"); }
+    .img3 { background-image: url("Images/tropical-cyclone.jpg"); }
+    .img4 { background-image: url("Images/weather-balloon.jpg"); }
+    .img5 { background-image: url("Images/ice-storm.jpg"); }
+    
+  </style> -->
+
+<!-- Positioning the jumbotron
+================================================== -->
+  <style>
+    .bs-docs-section {
+      position: "absolute";
+      left: "15%";
+      top: "10%";
     }
   </style>
 
-<!-- Pull in JS, Stylesheets
+    <!-- Positioning picture at bottom of homepage
 ================================================== -->
-  <script src="https://www.google-analytics.com/analytics.js"></script>
-  <script src="/assets/js/vendor/clipboard.min.61791f3.js" integrity="sha384-LxqnSPEB836Y+T4Gdc2WLcJM8iOUSm2PP4UHKccCaSJkuv1deQm8sjVjsVr/YEhg" crossorigin="anonymous"></script>
-  <script src="/assets/js/main.846258d.js" integrity="sha384-jePYXFmxFGKw46o031M2ulaSTZna4TIMo7iKbEqo7AaXWxP2nL7QO0aeM+1FtpYB" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
-  <script charset="utf-8" src="https://platform.twitter.com/js/button.e24f3bcdec527b80b9c80e88b62047c3.js"></script>
-  <link href="assets/css/fontAwesome.css" rel="stylesheet">
-  <link href="assets/css/light-box.css" rel="stylesheet">
-  <link href="assets/css/owl-carousel.css" rel="stylesheet">
-  <link href="assets/css/bootstrap-slate.css" rel="stylesheet">
-  <link href="assets/css/bootstrap-slate.min.css" rel="stylesheet">
-  <script src="assets/js/main.js"></script>
-  <script src="assets/js/plugins.js"></script>
-  <script src="assets/js/vendor/bootstrap.js"></script>
-  <script src="assets/js/vendor/bootstrap.min.js"></script>
-  <!-- <script src="assets/js/vendor/jquery-1.11.2.min.js"></script> -->
-  <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-  <script src="assets/js/vendor/npm.js"></script>
+<style>
+    #bottomHalf {
+    
+    background: url(Images/icecrystals.jpg);
+    width: 80vw;
+    height: 47vh;
+    /* position: absolute;
+    right: 0px;
+    height: 48%; */
+    }
+
+  </style>
+
+<!-- Sidebar
+================================================== -->
+  <style>
+    #wrapper {
+  padding-left: 250px;
+  transition: all 0.4s ease 0s;
+}
+
+#sidebar-wrapper {
+  margin-left: -250px;
+  left: 250px;
+  width: 250px;
+  background: rgba(#3c3c3c);
+  position: fixed;
+  height: 100%;
+  overflow-y: auto;
+  z-index: 1000;
+  transition: all 0.4s ease 0s;
+}
+
+#page-content-wrapper {
+  width: 100%;
+}
+
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width:767px) {
+
+    #wrapper {
+      padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+      left: 0;
+    }
+
+    #wrapper.active {
+      position: relative;
+      left: 250px;
+    }
+
+    #wrapper.active #sidebar-wrapper {
+      left: 250px;
+      width: 250px;
+      transition: all 0.4s ease 0s;
+    }
+
+}
+  </style>
+
+
+  
 </head>
 
 <!-- Navbar
 ================================================== -->
-<body></body>
-<div class = "bs-component">
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  <a class="navbar-brand" href="WebVisualizationsProject.html">Weather Data Visualization</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto" style="list-style: none;">
-      <li class="nav-item dropdown act">
-        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" href="pages/MaxTemperature.html">Max Temperature</a></br>
-          <a class="dropdown-item" href="pages/Humidity.html">Humidity</a></br>
-          <a class="dropdown-item" href="pages/Cloudiness.html">Cloudiness</a></br>
-          <a class="dropdown-item" href="pages/WindSpeeds.html">Wind Speeds</a></br>
+<body>
+  <div class="wrapper">
+    <div class = "bs-component">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <!-- Sidebar collapse button
+================================================== -->
+
+        <!-- <button type="button" id="sidebarCollapse" class="btn btn-info"> <i class="fa fa-align-justify"></i> 
+        </button> -->
+        <a class="navbar-brand" href="index.html">Weather Data Visualization</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto" style="list-style: none;">
+            <li class="nav-item dropdown act">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="pages/MaxTemperature.html">Max Temperature</a></br>
+                <a class="dropdown-item" href="pages/Humidity.html">Humidity</a></br>
+                <a class="dropdown-item" href="pages/Cloudiness.html">Cloudiness</a></br>
+                <a class="dropdown-item" href="pages/WindSpeeds.html">Wind Speeds</a></br>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/Comparisons.html">Comparisons</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/Data.html">Data</a>
+            </li>
+          </ul>
         </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="pages/Comparisons.html">Comparisons</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="pages/Data.html">Data</a>
-      </li>
-    </ul>
-  </div>
-</div>
-</nav> 
+      </nav>
+    </div>
+
+<!-- Sidebar
+================================================== -->
+    <div id ="wrapper">
+      <div id="sidebar-wrapper">
+      <!-- <nav id="sidebar">
+        <div class="sidebar-header">
+            <h3>Preview</h3>
+        </div> -->
+        <ul class="sidebar-nav">
+          <h4>Plots</h4>
+            <div class = "row">
+              <div class = "col-sm-6 col-md-3">
+                <p>Max Temp</p>
+                <li> <a class = "thumbnail" href = "pages/MaxTemperature.html"><img src ="Images/lat-temp.png" height="150px" width = "225px"></a></li>
+                </br>
+                <p>Humidity</p>
+                <li> <a class = "thumbnail" href = "pages/Humidity.html"><img src ="Images/lat-hum.png" height="150px" width = "225px"></a></li>
+                </br>
+                <p>Cloudiness</p>
+                <li> <a class = "thumbnail" href = "pages/Cloudiness.html"><img src ="Images/lat-cloud.png" height="150x" width = "225px"></a></li>
+                </br>
+                <p>Wind Speeds</p>
+                <li> <a class = "thumbnail" href = "pages/WindSpeeds.html"><img src ="Images/lat-wind.png" height="150px" width = "225px"></a></li>
+            </div>
+          </div>
+        </ul>
+      </nav>
+    </div>
 
 <!-- Container
 ================================================== -->
@@ -148,34 +272,47 @@
         <div class="col-lg-12">
           <div class="bs-component">
             <div class="jumbotron">
-              <h2 class="display-3">What's the perfect latitude for your attitude?</h>
-              <p class="lead">Provide your ideal weather conditions.  We'll find your ideal vacation location! <br>
+              
+              <h2 class="display-3">What's the perfect latitude for your attitude?</br></h2>
               </br>
-              Choose your ideal maximum temperature, humidity, cloudiness, and wind speed. Based the conditions, we'll pick a vacation spot and a hotel!</p>
-              <p class="lead">
-                <a class="btn btn-primary btn-lg" href="#" role="button">Start here</a>
-              </p>
+              <p class="lead">The purpose of this project is to analyze how weather changes in relationship to distance from the equator.  Five hundred cities were queried using OpenWeatherMapAPI.</br>
+              </br>
+              Utilizing Matplotlib to generate visuals, plots show the relationship of latitude to temperature, humidity, cloudiness, and wind speeds.</br>
+              </br>
+              Source data is provided on the Data page. Visualizations may be found under the Plots dropdown, with an overview at the Comparisons page.</br>
+              </br>
+              Coming soon!  Enter your ideal weather conditions to find the perfect vacation spot!</p>
+              <div id="bottomHalf"></div>
             </div>
         </div>
       </div>
     </div>
 
+  
+
 <!-- Image
 ================================================== -->
-<style>
-.bottom_image{
-  width:100%;
-  min-height:100%;
-  margin: auto;
-  background-size: cover;
-  backgroud-position: bottom;
-  background-repeat: no repeat;
-}
-</style>
-<div>
-  <img class="bottom_image" src="https://cdn.slashgear.com/wp-content/uploads/2020/04/star-wars-backgrounds-37.jpg" itemprop="image" style="width: 100%; height: 100%;"/>
-</div>
 
-<script src="assets/js/vendor/bootstrap.min.js"></script>
+  <!-- <div id="bottomHalf"></div> -->
+
+<!-- <div class="bg-image img1"></div> 
+    <div class="bg-image img2"></div>
+    <div class="bg-image img3"></div>
+    <div class="bg-image img4"></div>
+    <div class="bg-image img5"></div>
+    <div class="bg-image img6"></div>
+  </div> -->
+  <!-- Pull in JS, Stylesheets
+================================================== -->
+  <script src="https://www.google-analytics.com/analytics.js"></script>
+  <!-- The following script makes the dropdown work -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
+  <script charset="utf-8" src="https://platform.twitter.com/js/button.e24f3bcdec527b80b9c80e88b62047c3.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+  <script src="assets/js/plugins.js"></script>
+  <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </body>
 </html>
